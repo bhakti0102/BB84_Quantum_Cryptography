@@ -1,0 +1,23 @@
+# --- Virtual environments (never commit these) ---
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg
+pyvenv.cfg.*
+
+# --- Python cache / build artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

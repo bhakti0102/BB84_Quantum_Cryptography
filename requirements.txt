@@ -1,0 +1,11 @@
+# BB84 Quantum Cryptography Simulator - dependencies
+# Install with:  pip install -r requirements.txt
+
+# Core GUI + visualization
+streamlit
+matplotlib
+pandas
+
+# Optional: only needed for the "Circuit" tab in the Streamlit app.
+# The CLI simulation (main.py) and the test suite run without it.
+qiskit
