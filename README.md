@@ -8,6 +8,18 @@ This project is a modular Python simulation of the BB84 quantum key distribution
 >
 > **Research: ongoing.** This is an active project. Work continues on the research and analysis side — deeper study of the protocol, noise modelling, additional attack strategies, and extensions such as error correction and privacy amplification (see *Future Enhancements* below). Expect this repository to keep evolving.
 
+## Demo
+
+The dashboard makes BB84's core security property visible. With no eavesdropper, Alice and Bob's sifted keys match perfectly (QBER 0%). Enable Eve, and her intercept-resend attack drives the error rate to ~25% — the tell-tale fingerprint that the channel is being watched, which is exactly how BB84 detects eavesdropping.
+
+**Honest channel — no eavesdropper (QBER 0.00%, keys match)**
+
+![BB84 dashboard with no eavesdropper: QBER 0.00%, keys match](assets/dashboard_no_eve.png)
+
+**Eavesdropper present — Eve enabled (QBER 25.12%, keys do not match)**
+
+![BB84 dashboard with Eve enabled: QBER 25.12%, keys do not match](assets/dashboard_with_eve.png)
+
 ## Features
 
 - BB84 protocol simulation with Alice, Bob, and optional Eve.
